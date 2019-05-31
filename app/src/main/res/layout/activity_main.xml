@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/cardColor"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/kopi_jantan"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/cardColor">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/kopijantan">
+
+                <LinearLayout
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Kopi Jantan"
+                        android:textSize="30dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Your subtitle goes here.."
+                        android:padding="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/kopi_betina"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/cardColor">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/kopibetina">
+
+                <LinearLayout
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Kopi Betina"
+                        android:textSize="30dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Your subtitle goes here.."
+                        android:padding="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/kopi_luwak"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/cardColor">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/luwakcoffee">
+
+                <LinearLayout
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Kopi Luwak"
+                        android:textSize="30dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Your subtitle goes here.."
+                        android:padding="5dp"
+                        android:textColor="@android:color/darker_gray"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

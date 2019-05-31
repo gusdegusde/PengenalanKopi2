@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/loginButton"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        android:title="Login"/>
+    <item
+        android:id="@+id/logoutButton"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        android:title="Logout"
+        android:visible="false"/>
+    <item
+        android:id="@+id/proses_pembuatan_kopi"
+        android:icon="@drawable/ic_free_breakfast_white_24dp"
+        android:title="Proses Kopi"/>
+    <item
+        android:id="@+id/tentang_saya"
+        android:icon="@drawable/ic_person_white_24dp"
+        android:title="Tentang Saya"/>
+</menu>
