@@ -13,7 +13,7 @@
     <item
         android:id="@+id/proses_pembuatan_kopi"
         android:icon="@drawable/ic_free_breakfast_white_24dp"
-        android:title="Proses Kopi"/>
+        android:title="Pengolahan Kopi"/>
     <item
         android:id="@+id/tentang_saya"
         android:icon="@drawable/ic_person_white_24dp"

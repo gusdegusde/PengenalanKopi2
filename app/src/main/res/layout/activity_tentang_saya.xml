@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TentangSayaActivity"
+    android:padding="10dp"
+    android:background="@color/cardColor"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+        <ImageView
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/back_to_kopi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_back_darkgrey_24dp"
+            android:backgroundTint="@android:color/darker_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/judul_skripsi"
+            android:textAlignment="center"
+            android:textSize="19dp"
+            android:textColor="@android:color/holo_orange_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/tentang_skripsi"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:textColor="@android:color/holo_orange_light"/>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logo_uti"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="OLEH:"
+            android:textSize="19dp"
+            android:textColor="@android:color/holo_orange_light"
+            android:textAlignment="center"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp">
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:layout_width="100dp"
+                    android:text="NAMA"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="2"
+                    android:text=":"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="3"
+                    android:text="SELFIANA KOSAT"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:layout_width="100dp"
+                    android:text="NIM"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="2"
+                    android:text=":"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="3"
+                    android:text="65515012"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:text="JENJANG STUDI"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="2"
+                    android:text=":"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="3"
+                    android:text="STRATA SATU (S1)"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:layout_width="150dp"
+                    android:text="PROGRAM STUDI"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="2"
+                    android:text=":"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+                <TextView android:layout_column="3"
+                    android:text="TEKNIK INFORMATIKA"
+                    android:padding="3dip"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:text="FAKULTAS KOMPUTER"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:text="UNIVERSITAS TEKNOLOGI INDONESIA"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="19dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_column="1"
+                    android:text="2019"
+                    android:padding="3dip"
+                    android:textAlignment="center"
+                    android:textSize="19dp"
+                    android:textColor="@android:color/holo_orange_light"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

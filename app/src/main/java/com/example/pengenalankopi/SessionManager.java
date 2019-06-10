@@ -3,6 +3,7 @@ package com.example.pengenalankopi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import java.util.HashMap;
 
@@ -13,8 +14,9 @@ public class SessionManager {
 
     int PRIVATE_MODE = 0;
     private static final String PREF_NAME = "SessionPengenalanKopi";
-    public static final String IS_LOGIN = "IsLoggedIn";
-    public static final String SUDAH_LOGIN = "sudah_login";
+    private static final String IS_LOGIN = "IsLoggedIn";
+    public static final String KEY_NAME = "name";
+
 
     public SessionManager(Context context){
         this._context = context;
@@ -22,10 +24,10 @@ public class SessionManager {
         editor = sharedPreferences.edit();
     }
 
-    public void buatLoginSession(){
+    public void buatLoginSession(String username){
         editor.putBoolean(IS_LOGIN, true);
+        editor.putString(KEY_NAME, username);
         editor.commit();
-//        return sharedPreferences.getBoolean(IS_LOGIN, value);
     }
 
     public void cekLogin(){
@@ -39,7 +41,7 @@ public class SessionManager {
 
     public HashMap<String, String> getUserLogin(){
         HashMap<String, String> user = new HashMap<>();
-        user.put(SUDAH_LOGIN, sharedPreferences.getString(SUDAH_LOGIN, "Sudah login"));
+        user.put(KEY_NAME, sharedPreferences.getString(KEY_NAME, null));
         return user;
     }
 

@@ -1,8 +1,6 @@
 package com.example.pengenalankopi;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Handler;
 import android.text.Html;
@@ -25,12 +23,6 @@ public class LoginActivity extends AppCompatActivity {
     public Button buttonLogin;
 
     DatabaseHelper databaseHelper;
-//    SharedPreferences sharedPreferences;
-//    SharedPreferences.Editor editor;
-//    Boolean session = false;
-//    public static final String my_shared_preferences = "my_shared_preferences";
-//    public static final String session_status = "session_status";
-//    private static final String IS_LOGIN = "isLoggedIn";
     SessionManager sessionManager;
 
     @Override
@@ -56,8 +48,8 @@ public class LoginActivity extends AppCompatActivity {
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
-//                                checkSession();
-                                sessionManager.buatLoginSession();
+                                sessionManager.buatLoginSession(username);
+                                linkKeActivity();
                                 finish();
                             }
                         }, Snackbar.LENGTH_LONG);
@@ -69,25 +61,18 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-//
-//    private void checkSession(){
-//        sharedPreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
-//        session = sharedPreferences.getBoolean(session_status, true);
-//        editor.putBoolean(IS_LOGIN, true);
-//        editor.commit();
-//        String previousActivity =  getIntent().getStringExtra("previousActivity");
-//        Log.d("PREVIOUS ACTIVITY", previousActivity);
-//        if(session){
-//            try {
-//                Class fromClass = Class.forName(previousActivity);
-//                Intent i = new Intent(LoginActivity.this, fromClass);
-//                finish();
-//                startActivity(i);
-//            } catch (ClassNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
+    private void linkKeActivity(){
+        String previousActivity =  getIntent().getStringExtra("previousActivity");
+        Log.d("PREVIOUS ACTIVITY", previousActivity);
+        try {
+            Class fromClass = Class.forName(previousActivity);
+            Intent i = new Intent(LoginActivity.this, fromClass);
+            finish();
+            startActivity(i);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
     private void tampilkanTextDaftarPegawai(){
         TextView textViewBuatAkun = findViewById(R.id.textViewBuatAkun);

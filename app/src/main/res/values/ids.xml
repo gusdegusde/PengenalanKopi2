@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="buttonTambahKopiJantan"/>
+    <item type="id" name="buttonTambahKopiBetina"/>
+    <item type="id" name="buttonTambahKopiLuwak"/>
+    <item type="id" name="buttonEditKopiJantan"/>
+    <item type="id" name="buttonEditKopiBetina"/>
+    <item type="id" name="buttonEditKopiLuwak"/>
+    <item type="id" name="buttonHapusKopiJantan"/>
+    <item type="id" name="buttonHapusKopiBetina"/>
+    <item type="id" name="buttonHapusKopiLuwak"/>
+</resources>

@@ -8,13 +8,25 @@ import android.widget.ProgressBar;
 import timber.log.Timber;
 
 public class SplashScreenActivity extends AppCompatActivity {
+
+//    deklarasi variabel
     private ProgressBar mProgress;
+    DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
         mProgress = findViewById(R.id.splash_screen_progress_bar);
+
+//        untuk inisialisasi database nya
+        databaseHelper = new DatabaseHelper(this);
+        databaseHelper.inisialisasiMasterMenuKopi();
+        databaseHelper.inisialisasiDetilMenuKopi();
+        databaseHelper.inisialisasiFotoKopi();
+        databaseHelper.updateHasilCounter();
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -25,6 +37,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         }).start();
     }
 
+//    progress bar selama 10 detik
     private void doWork(){
         for (int progress = 0; progress<100; progress+=10){
             try{
@@ -37,6 +50,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         }
     }
 
+//    fungsi untuk menjalankan aktivity selanjutnya
     private void startApp(){
         Intent intent = new Intent(SplashScreenActivity.this, MainActivity.class);
         startActivity(intent);

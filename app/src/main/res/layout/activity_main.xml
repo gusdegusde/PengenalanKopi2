@@ -51,7 +51,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Your subtitle goes here.."
+                        android:text="@string/subTitleKopiJantan"
                         android:padding="5dp"
                         android:textColor="@android:color/darker_gray"/>
                 </LinearLayout>
@@ -100,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Your subtitle goes here.."
+                        android:text="@string/subTitleKopiBetina"
                         android:padding="5dp"
                         android:textColor="@android:color/darker_gray"/>
                 </LinearLayout>
@@ -149,7 +149,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Your subtitle goes here.."
+                        android:text="@string/subTitleKopiLuwak"
                         android:padding="5dp"
                         android:textColor="@android:color/darker_gray"/>
                 </LinearLayout>

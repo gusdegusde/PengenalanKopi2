@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".SplashScreenActivity"
             android:screenOrientation="portrait"
@@ -36,12 +37,28 @@
             android:name=".KopiJantanActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity"
-            android:label="@string/app_name"
+        <activity
+            android:name=".tambahKopi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".editKopi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".hapusKopi"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".DaftarActivity"
+        <activity
+            android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DaftarActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TentangSayaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PengolahanKopiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
